@@ -1,0 +1,393 @@
+html, body {
+	color: #1e1e1e;
+	font-size: 16px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: #f3f3f4;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	user-select: none;
+	line-height: normal;
+}
+
+
+.css-transitions-only-after-page-load * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+
+.wrapper {
+	padding: 20px;
+}
+
+.cards {
+	text-align: center;
+	max-width: 1090px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	transition: all 250ms ease-in-out;
+}
+
+.card-title {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 10px;
+	height: 35px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	min-height: 37px;
+}
+
+.card-description {
+}
+
+img.card-image {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 6px;
+	object-position: center;
+	border: 1px solid #cacaca;
+	-webkit-user-drag: none;
+	user-drag: none;
+	transition: all 250ms ease-in-out;
+}
+
+.card {
+	/*width: 160px;*/
+	width: 134px;
+	height: auto;
+	aspect-ratio: 12.44/7.26;
+	padding: 10px;
+	border-radius: 20px;
+	border: 2px solid #cacaca;
+	background-color: #fff;
+	/* margin: 10px; */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	cursor: pointer;
+	user-select: none;
+	app-region: no-drag;
+	/* -webkit-user-drag: none; */
+	vertical-align: top;
+	transition: all 250ms ease-in-out;
+	backface-visibility: hidden;
+}
+
+.card:hover {
+	transform: rotate(3deg);
+}
+
+.activity-title {
+	text-align: center;
+	font-size: 43px;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.activity-description {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 250ms ease-in-out;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal.show-modal {
+	opacity: 1;
+	pointer-events: initial;
+}
+
+.modal-underlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-body {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	padding: 40px;
+	width: 100vw;
+	max-width: 600px;
+	height: auto;
+	border-radius: 24px;
+}
+
+.modal-title {
+	text-align: center;
+	font-size: 38px;
+	font-weight: 600;
+	margin-top: 0;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+.modal-buttons {
+	border-top: 1px solid #cacaca;
+	padding-top: 10px;
+	margin-bottom: -25px;
+	margin-top: 20px;
+	text-align: center;
+	/* cursor: pointer; */
+}
+
+img.modal-image {
+	width: 100%;
+	max-height: 300px;
+	object-fit: contain;
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+
+p.modal-description {
+	font-weight: 300;
+	margin: 20px 0;
+	text-align: center;
+}
+
+button.modal-back-button {
+	background: none;
+	border: none;
+	text-align: center;
+	padding: 10px 20px;
+	cursor: pointer;
+	/* text-transform: uppercase; */
+	width: 100%;
+}
+
+.modal-author-to-reference {
+	font-size: 10px;
+	margin: 0;
+	text-align: right;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+h3.modal-references {
+	font-size: 14px;
+}
+
+.modal-references-entry {
+	font-size: 12px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+span.footer-link {
+	cursor: pointer;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.start-sort-activity {
+}
+
+.button {
+	font-size: 20px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 149px;
+	border: 1px solid #cacaca;
+	padding: 10px;
+	border-radius: 12px;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all 250ms ease-in-out;
+	text-align: center;
+	transform-origin: center;
+}
+
+.button:hover {
+	filter: brightness(0.85);
+}
+
+.button:active {
+	filter: brightness(0.65);
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	transition: all 250ms ease-in-out;
+	opacity: 1;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mode-sorting .card {
+	/* transform: scale(0.5); */
+	aspect-ratio: initial;
+	padding: 0;
+	/* height: 35px; */
+}
+
+.mode-sorting .card img.card-image {
+	width: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.mode-default .print-sort-activity {
+	width: 0;
+	overflow: hidden;
+	padding: 0;
+	opacity: 0;
+}
+
+.mode-sorting .cards {
+	gap: 4px;
+	max-width: 830px;
+}
+
+.mode-sorting .start-sort-activity {
+	width: 0;
+	overflow: hidden;
+	padding: 0;
+	opacity: 0;
+	margin: 0;
+}
+
+.sorting-activity {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	transition: all 250ms ease-in-out;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: flex-start;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-top: 0;
+	overflow: hidden;
+}
+
+.mode-sorting .sorting-activity {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	margin-top: 40px;
+}
+
+.sorting-column {
+	border-right: 3px solid #999;
+	border-left: 3px solid #999;
+	width: calc(100% / 3);
+}
+
+.sorting-column-title {
+	padding: 10px;
+	text-align: center;
+	border-bottom: 3px solid #999;
+	font-size: 40px;
+}
+
+.sorting-column:first-child,
+.sorting-column:last-child {
+	border: 0;
+}
+
+
+.sorting-column-dropzone {
+	min-height: calc(100vh - 611px);
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.card.draggable-mirror {
+	transition: none;
+}
+
+.mode-default .print-sort-activity {
+}
+
+span.fa.fa-arrows {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: -20px;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.mode-sorting span.fa.fa-arrows {
+	display: block;
+}

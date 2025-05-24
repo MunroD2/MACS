@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app="Mental Activity Cards" lang="en" ng-controller="master">
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular-csp.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="sys/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="sys/css/print.css" media="print">
+
+	<!--Scripts-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.1.4/build/umd/index.min.js"></script>
+
+	<!--The title-->
+	<title>Mental Activity Card Sort</title>
+
+
+</head>
+<body ng-cloak>
+
+<div class="css-transitions-only-after-page-load wrapper mode-{{$root.mode || 'default'}}">
+	<h1 class="activity-title">Mental Activity Card Sort</h1>
+
+	<div class="header">
+		<span class="button start-sort-activity" ng-click="setModeToSorting()">Start sorting</span>
+		<span class="button print-sort-activity" ng-click="print()">Print <span class="fa fa-print"></span></span>
+	</div>
+
+	<div class="cards" draggable-cards>
+		<div class="card" ng-repeat="card in cards" aria-label="{{card.title}}" aria-description="{{card.description}}" ng-click="showCard(card)">
+			<img ng-if="!$root.hideCardImages" class="card-image" ng-src="sys/img/{{card.image}}">
+			<span class="fa fa-arrows"></span>
+			<h1 class="card-title">{{card.title}}</h1>
+		</div>
+	</div>
+
+	<div class="sorting-activity">
+		<div class="sorting-column">
+			<div class="sorting-column-title">Often</div>
+			<div class="sorting-column-dropzone">
+
+			
+			</div>
+		</div>
+
+		<div class="sorting-column">
+			<div class="sorting-column-title">Sometimes</div>
+			<div class="sorting-column-dropzone"></div>
+		</div>
+
+		<div class="sorting-column">
+			<div class="sorting-column-title">Never</div>
+			<div class="sorting-column-dropzone"></div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="footer">
+	<span class="footer-link footer-link-instructions" ng-click="showInstructions()">Instructions</span>
+	<span class="footer-link footer-link-acknowledgements" ng-click="showAcknowledgements()">Acknowledgements</span>
+	<span class="footer-link footer-link-resources" ng-click="showResources()">Resources</span>
+</div>
+
+<div class="modal" ng-class="{'show-modal': $root.modalActive}">
+	<div class="modal-underlay" ng-click="hideCard()"></div>
+	<div class="modal-body">
+
+		<div class="modal-content">
+			<h1 class="modal-title" ng-if="$root.card.title">{{$root.card.title}}</h1>
+			<p class="modal-description" ng-if="$root.card.description">{{$root.card.description}}</p>
+			<p class="modal-author-to-reference" ng-if="$root.card.authorToReference">{{$root.card.authorToReference}}</p>
+			<img ng-if="!!$root.card" class="modal-image" ng-src="sys/img/{{$root.card.image}}" ng-if="$root.card.image">
+			<div class="modal-references" ng-if="$root.card.references">
+				<h3 class="modal-references">References</h3>
+				<p class="modal-references-entry" ng-bind-html="trustAsHTML($root.card.references)"></p>
+			</div>
+		</div>
+
+		<div class="modal-buttons">
+			<button class="modal-back-button" ng-click="hideCard()">
+				<span class="fa fa-arrow-left"></span>
+				Back
+			</button>
+		</div>
+	</div>
+
+</div>
+
+<script src="sys/js/main.js"></script>
+</body>
+</html>
+

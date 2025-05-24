@@ -1,0 +1,40 @@
+
+/*html, body {
+	width: 420mm;
+}*/
+
+/*html {
+	transform-origin: top left;
+	transform: scale(0.5);
+}*/
+
+.footer,
+.header,
+.cards {
+	display: none;
+}
+
+.card {
+    width: calc(50% - 10px)
+}
+
+.card-title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.activity-title {
+    margin-bottom: 40px;
+}
+
+.sorting-column-dropzone {
+	min-height: calc(100vh - 260px);
+}
+
+.sorting-column-dropzone {
+    gap: 10px;
+}
+
+.fa-arrows {
+	display: none !important;
+}
