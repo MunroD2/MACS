@@ -15,7 +15,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Deciding`,
 				description: `Debating what to do, what is for the best`,
-				image: `deciding.png`,
+				image: `pexels-mizunokozuki-12911860.jpg`,
 				colour: `#eb7c31`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -23,7 +23,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Re-living`,
 				description: `Some event, period or relationship`,
-				image: `re-living.png`,
+				image: `pexels-ron-lach-9849635.jpg`,
 				colour: `#a5a5a5`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -31,7 +31,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Prioritising`,
 				description: `Working out what matter most, next, or at all to you`,
-				image: `prioritising.png`,
+				image: `pexels-mikhail-nilov-6592364.jpg`,
 				colour: `#fd0000`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -39,7 +39,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Clarifying`,
 				description: `Sorting out what you think about some issue, person or problem`,
-				image: `clarifying.png`,
+				image: `clarifying-v2.jpg`,
 				colour: `#a8cf8d`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -47,7 +47,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Imagining`,
 				description: `The future, including ‘what would happen if…”`,
-				image: `imagining.png`,
+				image: `pexels-bertellifotografia-1830252.jpg`,
 				colour: `#6f309f`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -55,7 +55,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Imaginary Conversations`,
 				description: `Held with people known to you or whom you know of`,
-				image: `imaginary-conversations.png`,
+				image: `imaginary-conversations-v2.png`,
 				colour: `#00afee`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -63,7 +63,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Budgeting`,
 				description: `Estimating whether or not you can afford to do something in terms of money, time or effort`,
-				image: `budgeting.png`,
+				image: `pexels-cottonbro-3943723.jpg`,
 				colour: `#fdbe00`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -71,7 +71,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Planning`,
 				description: `Day, Week, Year`,
-				image: `planning.png`,
+				image: `pexels-n-voitkevich-8927463.jpg`,
 				colour: `#4371c2`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -79,7 +79,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Rehearsing`,
 				description: `Practicing what you will say or do`,
-				image: `rehearsing.png`,
+				image: `rehearsing-v2.png`,
 				colour: `#d2349e`,
 				authorToReference: "(Munro, 2024)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -94,39 +94,39 @@ angular.module('Mental Activity Cards', [])
 			},
 			{
 				title: `Knowing`,
-				description: `“Knowing” what the right thing to do is`,
-				image: `knowing.png`,
+				description: `“Knowing” what the right thing to do is.`,
+				image: `pexels-supushpitha-1736222.jpg`,
 				colour: `#8d0000`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Considering`,
-				description: `Taking into account the experiences of others `,
-				image: `considering.png`,
+				description: `Taking into account the experiences of others.`,
+				image: `pexels-bertellifotografia-7510729.jpg`,
 				colour: `#4ff2fa`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Comparing`,
-				description: `Weighing your own experience alongside the experience of another person`,
-				image: `comparing.png`,
+				description: `Weighing your own experience alongside the experience of another person.`,
+				image: `pexels-olia-danilevich-8145356.jpg`,
 				colour: `#caeafd`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Weighing up`,
-				description: `Best case/worst case scenarios`,
-				image: `weighing-up.png`,
+				description: `Best case/worst case scenarios.`,
+				image: `pexels-thirdman-8012227.jpg`,
 				colour: `#d0b0df`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Downplaying`,
-				description: `Minimising experiences and expectations`,
+				description: `Minimising experiences and expectations.`,
 				image: `downplaying.png`,
 				colour: `#c1cec0`,
 				authorToReference: "(Munro, 2024)",
@@ -134,15 +134,15 @@ angular.module('Mental Activity Cards', [])
 			},
 			{
 				title: `Praying`,
-				description: `Talking with God about the issue before you`,
-				image: `praying.png`,
+				description: `Talking with God about the issue before you.`,
+				image: `praying-v2.jpg`,
 				colour: `#9898fd`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Meditating`,
-				description: `Considering future options in the light of one’s faith and spiritual calling`,
+				description: `Considering future options in the light of one’s faith and spiritual calling.`,
 				image: `meditating.png`,
 				colour: `#b3c5e5`,
 				authorToReference: "(Munro, 2024)",
@@ -150,28 +150,27 @@ angular.module('Mental Activity Cards', [])
 			},
 			{
 				title: `Worrying`,
-				description: `Feeling anxious/concerned about present and future plans`,
-				image: `worrying.png`,
+				description: `Feeling anxious/concerned about present and future plans.`,
+				image: `pexels-mikhail-nilov-7534778.jpg`,
 				colour: `#998fc0`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Procrastinating`,
-				description: `Putting off taking action/making decisions`,
-				image: `procrastinating.png`,
+				description: `Putting off taking action/making decisions..`,
+				image: `pexels-anntarazevich-6173669.jpg`,
 				colour: `#b76be0`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 			{
 				title: `Validating`,
-				description: `Confirming that own choices are worthwhile`,
-				image: `validating.png`,
+				description: `Mentally affirming that your judgment is sound and that your decisions, feelings and/or actions are justified.`,
+				image: `validating-v2.png`,
 				colour: `#88c0c3`,
 				authorToReference: "(Munro, 2024)",
 				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440.",
-				references: "Munro, D., Willis, J., Gibson, A., & Laundon, M. (2024). From inside the head to putting it on the table–supporting reflexive decision-making for unpaid female carers considering higher education. <i>Reflective Practice, 25</i>(3), 426-440."
 			},
 		]
 
@@ -223,7 +222,7 @@ angular.module('Mental Activity Cards', [])
 		}
 
 		setTimeout(() => $(".css-transitions-only-after-page-load").removeClass("css-transitions-only-after-page-load"), 10);
-		
+
 	})
 
 	/*Turns off the ng-scope, et al. debug classes*/
@@ -264,7 +263,7 @@ angular.module('Mental Activity Cards', [])
 		restrict: 'A',
 		scope: true,
 		link: (scope, element, attrs) => {
-		
+
 		}
 	}
 })*/
