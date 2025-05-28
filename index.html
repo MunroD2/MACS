@@ -27,6 +27,7 @@
 
 	<div class="header">
 		<span class="button start-sort-activity" ng-click="setModeToSorting()">Start sorting</span>
+		<span class="button restart-sort-activity" ng-click="reload()">Reset <span class="fa fa-refresh"></span></span>
 		<span class="button print-sort-activity" ng-click="print()">Print <span class="fa fa-print"></span></span>
 	</div>
 
@@ -41,10 +42,7 @@
 	<div class="sorting-activity">
 		<div class="sorting-column">
 			<div class="sorting-column-title">Often</div>
-			<div class="sorting-column-dropzone">
-
-			
-			</div>
+			<div class="sorting-column-dropzone"></div>
 		</div>
 
 		<div class="sorting-column">
@@ -58,13 +56,15 @@
 		</div>
 	</div>
 
+
 </div>
 
 
 <div class="footer">
 	<span class="footer-link footer-link-instructions" ng-click="showInstructions()">Instructions</span>
 	<span class="footer-link footer-link-acknowledgements" ng-click="showAcknowledgements()">Acknowledgements</span>
-	<span class="footer-link footer-link-resources" ng-click="showResources()">Resources</span>
+	<span class="footer-link footer-link-resources" ng-click="showResources()">References</span>
+	<a class="footer-link footer-link-resources" href="mailto:munrod2@qut.edu.au?subject=MACS%20Activity%20Enquiry">Contact</a>
 </div>
 
 <div class="modal" ng-class="{'show-modal': $root.modalActive}">
@@ -75,6 +75,7 @@
 			<h1 class="modal-title" ng-if="$root.card.title">{{$root.card.title}}</h1>
 			<p class="modal-description" ng-if="$root.card.description">{{$root.card.description}}</p>
 			<p class="modal-author-to-reference" ng-if="$root.card.authorToReference">{{$root.card.authorToReference}}</p>
+			<div class="modal-page-to-include" ng-if="$root.card.page" ng-include="'sys/pages/' + $root.card.page + '.html'"></div>
 			<img ng-if="!!$root.card" class="modal-image" ng-src="sys/img/{{$root.card.image}}" ng-if="$root.card.image">
 			<div class="modal-references" ng-if="$root.card.references">
 				<h3 class="modal-references">References</h3>
@@ -90,6 +91,14 @@
 		</div>
 	</div>
 
+</div>
+<div class="acknowledgements">
+	<i>
+		Digital implementation and web development by <a href="https://github.com/schme16" target="_blank">Shane Gadsby</a><br>
+	</i>
+	<i>
+		MACS research by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/d2.munro" target="_blank">Dr. Deborah Munro</a>
+	</i>
 </div>
 
 <script src="sys/js/main.js"></script>
