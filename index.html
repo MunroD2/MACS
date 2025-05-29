@@ -22,37 +22,64 @@
 </head>
 <body ng-cloak>
 
-<div class="css-transitions-only-after-page-load wrapper mode-{{$root.mode || 'default'}}">
+<div class="css-transitions-only-after-page-load wrapper mode-{{$root.mode || 'default'}} {{$root.sortingMode}}">
 	<h1 class="activity-title">Mental Activity Card Sort</h1>
 
 	<div class="header">
 		<span class="button start-sort-activity" ng-click="setModeToSorting()">Start sorting</span>
+		<span class="button show-sort-activity-a" ng-click="$root.sortingMode = 'sort-a'">Show Activity A</span>
+		<span class="button show-sort-activity-b" ng-click="$root.sortingMode = 'sort-b'">Show Activity B</span>
 		<span class="button restart-sort-activity" ng-click="reload()">Reset <span class="fa fa-refresh"></span></span>
 		<span class="button print-sort-activity" ng-click="print()">Print <span class="fa fa-print"></span></span>
 	</div>
 
-	<div class="cards" draggable-cards>
-		<div class="card" ng-repeat="card in cards" aria-label="{{card.title}}" aria-description="{{card.description}}" ng-click="showCard(card)">
-			<img ng-if="!$root.hideCardImages" class="card-image" ng-src="sys/img/{{card.image}}">
-			<span class="fa fa-arrows"></span>
-			<h1 class="card-title">{{card.title}}</h1>
+	<div class="sort-activity-a" ng-show="$root.sortingMode == 'sort-a'">
+		<div class="cards" draggable-cards=".sort-activity-a">
+			<div class="card" ng-repeat="card in cards" aria-label="{{card.title}}" aria-description="{{card.description}}" ng-click="showCard(card)">
+				<img ng-if="!$root.hideCardImages" class="card-image" ng-src="sys/img/{{card.image}}">
+				<span class="fa fa-arrows"></span>
+				<h1 class="card-title">{{card.title}}</h1>
+			</div>
+		</div>
+
+		<div class="sorting-activity">
+			<div class="sorting-column">
+				<div class="sorting-column-title">Often</div>
+				<div class="sorting-column-dropzone"></div>
+			</div>
+
+			<div class="sorting-column">
+				<div class="sorting-column-title">Sometimes</div>
+				<div class="sorting-column-dropzone"></div>
+			</div>
+
+			<div class="sorting-column">
+				<div class="sorting-column-title">Never</div>
+				<div class="sorting-column-dropzone"></div>
+			</div>
 		</div>
 	</div>
 
-	<div class="sorting-activity">
-		<div class="sorting-column">
-			<div class="sorting-column-title">Often</div>
-			<div class="sorting-column-dropzone"></div>
+	<div class="sort-activity-b" ng-show="$root.sortingMode == 'sort-b'">
+
+		<div class="cards" draggable-cards=".sort-activity-b">
+			<div class="card" ng-repeat="card in cards" aria-label="{{card.title}}" aria-description="{{card.description}}" ng-click="showCard(card)">
+				<img ng-if="!$root.hideCardImages" class="card-image" ng-src="sys/img/{{card.image}}">
+				<span class="fa fa-arrows"></span>
+				<h1 class="card-title">{{card.title}}</h1>
+			</div>
 		</div>
 
-		<div class="sorting-column">
-			<div class="sorting-column-title">Sometimes</div>
-			<div class="sorting-column-dropzone"></div>
-		</div>
+		<div class="sorting-activity">
+			<div class="sorting-column">
+				<div class="sorting-column-title">Productive</div>
+				<div class="sorting-column-dropzone"></div>
+			</div>
 
-		<div class="sorting-column">
-			<div class="sorting-column-title">Never</div>
-			<div class="sorting-column-dropzone"></div>
+			<div class="sorting-column">
+				<div class="sorting-column-title">Unproductive</div>
+				<div class="sorting-column-dropzone"></div>
+			</div>
 		</div>
 	</div>
 
@@ -93,12 +120,9 @@
 
 </div>
 <div class="acknowledgements">
-	<i>
-		Digital implementation and web development by <a href="https://github.com/schme16" target="_blank">Shane Gadsby</a><br>
-	</i>
-	<i>
-		MACS research by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/d2.munro" target="_blank">Dr. Deborah Munro</a>
-	</i>
+	<i>Digital implementation and web development by <a href="https://github.com/schme16" target="_blank">Shane Gadsby</a></i>
+	<br>
+	<i>MACS research by <a href="https://www.qut.edu.au/about/our-people/academic-profiles/d2.munro" target="_blank">Dr. Deborah Munro</a></i>
 </div>
 
 <script src="sys/js/main.js"></script>

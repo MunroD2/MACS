@@ -7,6 +7,8 @@ angular.module('Mental Activity Cards', [])
 		//Trust a string as renderable HTML
 		m.trustAsHTML = $sce.trustAsHtml
 
+		m.$root.sortingMode = 'sort-a'
+
 		m.print = () => {
 			print()
 		}
@@ -246,18 +248,11 @@ angular.module('Mental Activity Cards', [])
 			restrict: 'A',
 			scope: true,
 			link: (scope, element, attrs) => {
-
-				m.swappable = new Draggable.Sortable(document.querySelectorAll('.sorting-column-dropzone,.cards'), {
-					draggable: '.card',
+				console.log(`${attrs.draggableCards} .card`)
+				m.swappable = new Draggable.Sortable(document.querySelectorAll(`${attrs.draggableCards} .sorting-column-dropzone, ${attrs.draggableCards} .cards`), {
+					draggable: `${attrs.draggableCards} .card`,
 					handle: '.fa-arrows',
-					sortAnimation: {
-						duration: 360,
-						easingFunction: 'ease-in-out',
-					},
-					classes: {
-						'draggable:invalid': 'invalid-drop-zone'
-					},
-					plugins: [Draggable.Plugins.SortAnimation],
+
 				})
 			}
 		}

@@ -19,7 +19,7 @@
 }
 
 .card-title {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .sorting-column-dropzone {
-	min-height: calc(100vh - 260px);
+	height: 750px;/*calc(100vh - 350px);*/
 }
 
 .sorting-column-dropzone {
@@ -37,4 +37,13 @@
 
 .fa-arrows {
 	display: none !important;
+}
+
+.ng-hide:not(.ng-hide-animate).sort-activity-a,
+.ng-hide:not(.ng-hide-animate).sort-activity-b {
+	display: block !important;
+}
+.sort-activity-b {
+	padding-top: 200px;
+	padding-bottom: 70px;
 }

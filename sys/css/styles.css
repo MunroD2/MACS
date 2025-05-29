@@ -309,7 +309,11 @@ a.footer-link.footer-link-resources {
 }
 
 .mode-default .print-sort-activity,
-.mode-default .restart-sort-activity {
+.mode-default .restart-sort-activity,
+.mode-default .show-sort-activity-a,
+.mode-sorting.sort-a .show-sort-activity-a,
+.mode-default .show-sort-activity-b,
+.mode-sorting.sort-b .show-sort-activity-b {
 	width: 0;
 	overflow: hidden;
 	padding: 0;
@@ -359,6 +363,13 @@ a.footer-link.footer-link-resources {
 	width: calc(100% / 3);
 }
 
+.sort-activity-b .sorting-column {
+	width: calc(100% / 2);
+}
+
+.sort-activity-b .sorting-column:first-child {
+	border-right: 3px solid #999;
+}
 
 .sorting-column-title {
 	padding: 10px;
@@ -384,8 +395,8 @@ a.footer-link.footer-link-resources {
 
 
 .sorting-column-dropzone {
-	height: calc(100vh - 611px);
-	min-height: 300px;
+	height: fit-content;
+	min-height: 250px;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
@@ -438,5 +449,4 @@ span.fa.fa-arrows {
 .acknowledgements a:active {
 	filter:brightness(0.4)
 }
-
 
