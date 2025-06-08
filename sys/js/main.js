@@ -23,15 +23,15 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Deciding`,
 				description: `Debating what to do, what is for the best`,
-				image: `pexels-mizunokozuki-12911860.jpg`,
+				image: `pexels-arina-krasnikova-5418939.jpg`,
 				colour: `#eb7c31`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
 			},
 			{
-				title: `Re-living`,
+				title: `Reliving`,
 				description: `Some event, period or relationship`,
-				image: `pexels-ron-lach-9849635.jpg`,
+				image: `pexels-fotios-photos-1808242.jpg`,
 				colour: `#a5a5a5`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -39,7 +39,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Prioritising`,
 				description: `Working out what matter most, next, or at all to you`,
-				image: `pexels-mikhail-nilov-6592364.jpg`,
+				image: `pexels-karolina-grabowska-5386421.jpg`,
 				colour: `#fd0000`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -47,7 +47,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Clarifying`,
 				description: `Sorting out what you think about some issue, person or problem`,
-				image: `clarifying-v2.jpg`,
+				image: `clarifying.png`,
 				colour: `#a8cf8d`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -55,7 +55,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Imagining`,
 				description: `The future, including ‘what would happen if…”`,
-				image: `pexels-bertellifotografia-1830252.jpg`,
+				image: `pexels-ihsanaditya-21568234.jpg`,
 				colour: `#6f309f`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -63,7 +63,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Imaginary Conversations`,
 				description: `Held with people known to you or whom you know of`,
-				image: `imaginary-conversations-v2.png`,
+				image: `imaginary-conversations.png`,
 				colour: `#00afee`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -71,7 +71,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Budgeting`,
 				description: `Estimating whether or not you can afford to do something in terms of money, time or effort`,
-				image: `pexels-cottonbro-3943723.jpg`,
+				image: `pexels-cottonbro-3943727.jpg`,
 				colour: `#fdbe00`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -79,7 +79,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Planning`,
 				description: `The day, the week or much longer ahead.`,
-				image: `pexels-n-voitkevich-8927463.jpg`,
+				image: `pexels-tima-miroshnichenko-6694529.jpg`,
 				colour: `#4371c2`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -87,7 +87,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Rehearsing`,
 				description: `Practicing what you will say or do`,
-				image: `rehearsing-v2.png`,
+				image: `rehearsing.png`,
 				colour: `#d2349e`,
 				authorToReference: "(Archer, 2003)",
 				references: "Archer, M.S. (2003). <i>Structure, agency, and the internal conversation.</i> Cambridge University Press."
@@ -103,7 +103,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Knowing`,
 				description: `“Knowing” what the right thing to do is.`,
-				image: `pexels-supushpitha-1736222.jpg`,
+				image: `knowing.png`,
 				colour: `#8d0000`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -111,7 +111,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Considering`,
 				description: `Taking into account the experiences of others.`,
-				image: `pexels-bertellifotografia-7510729.jpg`,
+				image: `pexels-gabby-k-9432944.jpg`,
 				colour: `#4ff2fa`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -119,7 +119,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Comparing`,
 				description: `Weighing your own experience alongside the experience of another person.`,
-				image: `pexels-olia-danilevich-8145356.jpg`,
+				image: `pexels-mikhail-nilov-8847134.jpg`,
 				colour: `#caeafd`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -127,7 +127,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Weighing up`,
 				description: `Best case/worst case scenarios.`,
-				image: `pexels-thirdman-8012227.jpg`,
+				image: `pexels-thirdman-8012227.png`,
 				colour: `#d0b0df`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -135,7 +135,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Downplaying`,
 				description: `Minimising experiences and expectations.`,
-				image: `downplaying.png`,
+				image: `pexels-keira-burton-6147232.jpg`,
 				colour: `#c1cec0`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -143,7 +143,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Praying`,
 				description: `Talking with God about the issue before you.`,
-				image: `praying-v2.jpg`,
+				image: `pexels-garonpiceli-576926.jpg`,
 				colour: `#9898fd`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -159,7 +159,7 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Worrying`,
 				description: `Feeling anxious/concerned about present and future plans.`,
-				image: `pexels-mikhail-nilov-7534778.jpg`,
+				image: `pexels-ketut-subiyanto-4560092.jpg`,
 				colour: `#998fc0`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
@@ -167,15 +167,15 @@ angular.module('Mental Activity Cards', [])
 			{
 				title: `Procrastinating`,
 				description: `Putting off taking action/making decisions..`,
-				image: `pexels-anntarazevich-6173669.jpg`,
+				image: `pexels-karolina-grabowska-6028679.jpg`,
 				colour: `#b76be0`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]"
 			},
 			{
 				title: `Validating`,
-				description: `Mentally affirming that your judgement is sound and that your decisions, feelings and/or actions are justified.`,
-				image: `validating-v2.png`,
+				description: `Mentally affirming that your judgment is sound and that your decisions, feelings and/or actions are justified`,
+				image: `validating.png`,
 				colour: `#88c0c3`,
 				authorToReference: "(Munro, 2023)",
 				references: "Munro, D. (2023). <i>How are women with unpaid caring responsibilities making decisions making decisions about higher education study?</i> [Doctoral dissertation, Queensland University of Technology]",
